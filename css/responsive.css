@@ -1,0 +1,45 @@
+@media screen and (max-width: 700px) {
+nav{
+	display: block;
+}
+nav ul{
+    list-style: none;
+    padding:0;
+    background:#444;
+}
+
+nav ul li a{
+    color:#ddd;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    line-height: 1;
+    text-align: center;
+}
+nav ul li{
+    border-bottom: 1px dotted #ddd;
+}
+nav div:first-child{
+    background:#222;
+}
+nav div:first-child h1{
+    line-height: 0;
+    padding: .8rem 0rem;
+    text-align: center;
+}
+
+nav div:first-child h1, nav ul{
+    margin:0;
+}
+
+.videoButton{
+	width: 70%;	
+	display: block;
+}
+#logo{
+	display: block;	
+	margin: 20px;
+	width: 50%;
+}
+
+}

@@ -1,0 +1,312 @@
+@charset "ISO-8859-1";
+body{
+	 color:white;
+	 background-color: black;
+}
+* {
+	box-sizing: border-box;
+}
+h1{
+ font-size: medium;
+}
+#logo{
+ float: left;
+ display: inline-block;
+ padding: 0;
+ margin-left:0;
+ margin-right: 20px;
+ width: 40%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    align-items: center;
+}
+    nav ul{
+     list-style: none;
+     padding:0;
+     background:#444;
+     display: flex;
+     align-items: center;
+     background:none;
+     flex-wrap: wrap;
+    }
+    nav div:first-child h1{
+        padding: 0;
+        margin:0 1rem;
+    }
+    nav div:first-child img{
+        height: 40px;
+        
+    }
+    nav ul li{
+        border-bottom:none;
+        flex: 1 0 auto;
+        position: relative;
+    }
+    nav ul li a{
+    color:#ffff00;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    line-height: 1;
+    }
+    nav ul li a::before, nav ul li a::after{
+        content: "";
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width:0%;
+        height: 2px;
+        background:red;
+        transition: .2s width ease-in-out;
+    }
+    
+    nav ul li a::before{
+        left:0;
+    }
+    
+    nav ul li a:hover::after,nav ul li a:hover::before{
+        width: 50%;
+    } 
+
+#videoSection{
+	width: 100%;
+	background: black;
+}
+
+
+.row{
+	font-size: 0;
+	width: 100%;
+}
+
+.videoButton{
+	position: relative;
+	display: inline-block;
+	width: 15%;
+	height: 15%;
+	margin: 2.5% 2.5% 0 2.5%;
+	padding: 0;
+	border-radius: 8px;
+	border: 2px;
+	background-color: transparent;
+	
+}
+
+.videoButton img {
+    width: 60%;
+    height: 60%;
+    padding: 0;
+    margin: 0;    
+}
+
+
+
+.videoButton:hover img{
+		filter: contrast(0.4);
+		cursor:pointer; 
+}
+	
+.trama{
+	width: 100%;
+	
+}
+
+.trama h3{
+	font-weight:bold;
+	color:silver;
+	
+}
+.trama p{
+	font-style:italic;
+	font-size: 80%;
+	color:silver;
+	
+}
+
+
+
+.myButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #232ce8), color-stop(1, #31bce6));
+	background:-moz-linear-gradient(top, #232ce8 5%, #31bce6 100%);
+	background:-webkit-linear-gradient(top, #232ce8 5%, #31bce6 100%);
+	background:-o-linear-gradient(top, #232ce8 5%, #31bce6 100%);
+	background:-ms-linear-gradient(top, #232ce8 5%, #31bce6 100%);
+	background:linear-gradient(to bottom, #232ce8 5%, #31bce6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#232ce8', endColorstr='#31bce6',GradientType=0);
+	background-color:#232ce8;
+	-moz-border-radius:31px;
+	-webkit-border-radius:31px;
+	border-radius:31px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:80%;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:none;
+	padding: 10px 10px;
+	text-shadow:0px 1px 0px #5c5cf2;
+	width: 15%;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #31bce6), color-stop(1, #232ce8));
+	background:-moz-linear-gradient(top, #31bce6 5%, #232ce8 100%);
+	background:-webkit-linear-gradient(top, #31bce6 5%, #232ce8 100%);
+	background:-o-linear-gradient(top, #31bce6 5%, #232ce8 100%);
+	background:-ms-linear-gradient(top, #31bce6 5%, #232ce8 100%);
+	background:linear-gradient(to bottom, #31bce6 5%, #232ce8 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#31bce6', endColorstr='#232ce8',GradientType=0);
+	background-color:#31bce6;
+}
+
+
+
+
+
+#footer {
+	
+  font-size: 80%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+  color:silver;
+  float:bottom;
+}
+ul.merch li{
+	float: left;
+    list-style: none;
+    padding: 0 2px
+}
+
+.myButton3 {
+	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #232ce8), color-stop(1, #31bce6));
+	background:-moz-linear-gradient(top, #232ce8 5%, #31bce6 100%);
+	background:-webkit-linear-gradient(top, #232ce8 5%, #31bce6 100%);
+	background:-o-linear-gradient(top, #232ce8 5%, #31bce6 100%);
+	background:-ms-linear-gradient(top, #232ce8 5%, #31bce6 100%);
+	background:linear-gradient(to bottom, #232ce8 5%, #31bce6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#232ce8', endColorstr='#31bce6',GradientType=0);
+	background-color:#232ce8;
+	-moz-border-radius:31px;
+	-webkit-border-radius:31px;
+	border-radius:31px;
+	display:inline-block;
+	position:relative;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:100%;
+	font-weight:bold;
+	font-style:italic;
+	padding:11px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5c5cf2;
+}
+.myButton3:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #31bce6), color-stop(1, #232ce8));
+	background:-moz-linear-gradient(top, #31bce6 5%, #232ce8 100%);
+	background:-webkit-linear-gradient(top, #31bce6 5%, #232ce8 100%);
+	background:-o-linear-gradient(top, #31bce6 5%, #232ce8 100%);
+	background:-ms-linear-gradient(top, #31bce6 5%, #232ce8 100%);
+	background:linear-gradient(to bottom, #31bce6 5%, #232ce8 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#31bce6', endColorstr='#232ce8',GradientType=0);
+	background-color:#31bce6;
+}
+
+#merch li {
+	
+ display:inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.signlog {
+    padding: 16px;
+    background-color: black;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-style:solid;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+	color: black;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+label{
+	color: white;
+}
+
+.resetbtn {
+    background-color: grey;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+}
+
+.resetbtn:hover {
+    opacity: 1;
+}
+
+.elencofilmsAdmin{
+	color: white;
+}
